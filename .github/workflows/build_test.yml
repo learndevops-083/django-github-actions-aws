@@ -44,6 +44,6 @@ jobs:
         aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         application_name: django-github-actions-aws
         environment_name: Django-github-actions-aws-env
-        version_label: 12348
+        version_label: v1
         region: "us-east-1"
         deployment_package: deploy.zip
