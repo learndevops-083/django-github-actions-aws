@@ -30,3 +30,16 @@ source myenv/bin/activate
 ```
 pip install -r requirements.txt
 ```
+### Login to your aws plaform create an elastic beanstalk Env using the following parameters
+click on the "Create a New Environment" prompt
+- Select Web server environment 
+- Application name:django-github-actions-aws
+- Enviroment will be auto generated
+- platform:managed
+          - python
+          - python 3.9 running on 64bit amazon linux 2023
+- click on next steps until environment has been created 
+  ### the rest settings should be default do not enable some options as they come with charges or cost
+Copy your aws cli keys and create a secret value in github clicking settings --> secrets and valuables --> Actions -->new repository secrets
+Any PR push in your github environment will trigger a build and deploy cicd Workflow.
+
